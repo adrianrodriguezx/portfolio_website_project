@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="description" content="Udacity Portfolio Project">
+	<meta name="author" content="//adrianrodriguez.us">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Udacity Portfolio Project</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- CSS Normalize ensures styles are interpreted the same accross all browsers -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Google Font Lato -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row header-row">
+				<div class="col-xs-6 col-md-6">
+					<!-- Logo -->
+					<a href="index.html" title="Porfolio Home Page">
+						<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<title>page logo</title>
+							<path d="M0 0v24h24v-24h-24zm11 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z" fill="#02b3e4"></path>
+						</svg>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-6 header-title">
+					<h1>Adrian Rodriguez</h1>
+					<h4>Full Stack Web Developer</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<!-- Intro -->
+			<div class="row">
+				<div class="col-md-12">
+					<picture id="intro-img">
+      					<source media="(min-width: 750px)" srcset="images/intro_html5_markup-1600_large_2x.jpg 2x, images/intro_html5_markup-960_large_1x.jpg" />
+      					<source media="(min-width: 500px)" srcset="images/intro_html5_markup-640_medium.jpg" />
+      					<img src="images/intro_html5_markup-320_small.jpg" class="img-responsive" alt="HTML5 Markup">
+    				</picture>
+				</div>
+			</div>			
+			<!-- Featured Work -->
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-muted">Featured Work</h2>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-4">
+					<picture id="mvtr-web">
+      					<source media="(min-width: 750px)" srcset="images/movie_trailers_website-1600_large_2x.jpg 2x, images/movie_trailers_website-960_large_1x.jpg" />
+      					<source media="(min-width: 500px)" srcset="images/movie_trailers_website-640_medium.jpg" />
+      					<img src="images/movie_trailers_website-320_small.jpg" class="project-img img-responsive" data-toggle="modal" data-target="#proj01-movie-trailers" alt="Movie Trailer Website Screenshot">
+    				</picture>
+    				<h3 class="text-uppercase">Movie Trailer Website</h3>
+					<a href="https://github.com/adrianrodriguezx/movie_trailer_website_project" target="_blank" title="Movie Trailer Website GitHub Repository">GitHub</a>
+				</div>
+				<div class="col-md-4">
+					<!-- Placeholder for future project -->
+					<picture id="blog-web">
+      					<source media="(min-width: 750px)" srcset="images/website_template-1600_large_2x.jpg 2x, images/website_template-960_large_1x.jpg" />
+      					<source media="(min-width: 500px)" srcset="images/website_template-640_medium.jpg" />
+      					<img src="images/website_template-320_small.jpg" class="project-img img-responsive" data-toggle="modal" data-target="#proj03-blog" alt="Multi User Blog Website Screenshot">
+    				</picture>
+    				<h3 class="text-uppercase">Multi User Blog</h3>
+					<a href="#" title="Multi User Blog GitHub Repository">GitHub</a>
+				</div>
+				<div class="col-md-4">
+					<!-- Placeholder for future project -->
+					<picture id="turnmt-results-web">
+      					<source media="(min-width: 750px)" srcset="images/website_template-1600_large_2x.jpg 2x, images/website_template-960_large_1x.jpg" />
+      					<source media="(min-width: 500px)" srcset="images/website_template-640_medium.jpg" />
+      					<img src="images/website_template-320_small.jpg" class="project-img img-responsive" data-toggle="modal" data-target="#proj04-turnmt-results" alt="Tournament Results Website Screenshot">
+    				</picture>
+    				<h3 class="text-uppercase">Tournament Results</h3>
+					<a href="#" title="Tournament Results GitHub Repository">GitHub</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Modals -->
+	<div class="modal fade" id="proj01-movie-trailers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+		    <article>
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myModalLabel">Movie Trailer Website</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<picture id="mvtr-web-modal">
+      				<source media="(min-width: 750px)" srcset="images/movie_trailers_website-1600_large_2x.jpg 2x, images/movie_trailers_website-960_large_1x.jpg" />
+      				<source media="(min-width: 500px)" srcset="images/movie_trailers_website-640_medium.jpg" />
+      				<img src="images/movie_trailers_website-320_small.jpg" alt="movie trailer website screenshot">
+    			</picture>
+    			<hr>
+    			<h6 class="text-muted">HTML CSS Python</h6>
+		      	<p>Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>
+		      	<a href="https://github.com/adrianrodriguezx/movie_trailer_website_project" target="_blank" title="Movie Trailer Website GitHub Repository">GitHub</a>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </article>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal /-->
+</body>
+</html>
